@@ -8,7 +8,7 @@ df.head()
 df.drop(['PassengerId','Name','SibSp','Parch','Ticket','Fare','Cabin','Embarked'],axis='columns',inplace=True)
 df.head()
 
-inputs = df.drop('Survived',axis='columns')
+inputs = df.drop('Survived',axis='columns') 
 target = df.Survived
 
 inputs.Sex = inputs.Sex.map({'male':1,"female":2})
